@@ -1,2 +1,4 @@
 # Knit_sample
-#aaaa
+#App.jsでターミナルを実行
+#ユーザネーム：so
+#パスワード:ichi
