@@ -2,6 +2,7 @@
 import {Route, Link, Routes, BrowserRouter} from 'react-router-dom';
 import Home from './components/Home';
 import Page1 from './components/Page1';
+import Page2 from './components/Page2';
 import Login from './components/Login';
 import Logout from './components/Logout';
 //import React, { useState } from 'react';
@@ -57,6 +58,10 @@ function Homemain() {
           <Link to="/Page1">Page1</Link>
         </li>
         <li>
+          <Link to="/Page2">Page2</Link>
+        </li>
+    
+        <li>
           <Link to="/Logout" onClick={Logout2}>Logout</Link>
         </li>
        <br/>
@@ -80,10 +85,9 @@ function NotFound() {
 
 export default App;
 
+//ここからコメントアウト
 /*
-import Page2 from './components/Page2';
 import Page3 from './components/Page3';
-<Route path="/Page2" element={<Page2 />} />
 <Route path="/Page3" element={<Page3 />} />
          
 
