@@ -10,3 +10,4 @@ export default class Page3 extends Component {
     );
   }
 }
+//URL  https://nakanishi-s.jp/react-x-db/
