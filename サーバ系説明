@@ -1,0 +1,20 @@
+参考にしたサイト：https://tora-k.com/2022/08/29/javascript-chatapp/#toc2
+ユーザ名：so　　パスワード：ichi
+"ts_smp"ファイルと"server"ファイルは同じ階層
+"Page3"ページにデータベース使ったファイルがある
+MYSQLを使ってるからはじめにデータベース作るのから始めると思う
+以下コード（参考にしたサイトにも書いてある）
+-------------------------------------------------------------------------
+create database sns;
+use sns;
+create table chat(id INT AUTO_INCREMENT, text TEXT, PRIMARY KEY (id));
+-------------------------------------------------------------------------
+実行動作
+"ts_smp"ターミナルでnpm　start (前と変わらず)
+新しく"server"ターミナルを作りその中で、
+node .\server.js
+で実行
+listening on port 3001
+db connect
+となれば成功。
+わからなかったら参考にしたサイトを見ろ
