@@ -44,8 +44,9 @@ Djangoの動作には、Pythonが必須。DjangoのバージョンとPythonの�
 
 *サーバ起動時にコマンドラインに表示される`You have 13 unapplied...`というmigrationsに関するエラーを消すには**サーバを終了してから`python manage.py migrate`** で消す*
 
----
-追記 2023/07/31
+
+## 追記 2023/07/31
+
 ## Pythonのバージョンを切り替える方法
 `pyenv`というPythonのバージョン管理ツールを使用する
 ### pyenvをインストールする
@@ -75,4 +76,3 @@ Djangoの動作には、Pythonが必須。DjangoのバージョンとPythonの�
 ※表示メッセジーの最終行に「Successfully installed django-3.1.3」と表示されていれば成功
 
 　
-
