@@ -1,0 +1,9 @@
+.like-btn{
+    display: inline-block;
+    margin-right: 5px;
+    color: red;
+}
+
+.add-color{
+    color:rgb(150, 216, 112);
+}
