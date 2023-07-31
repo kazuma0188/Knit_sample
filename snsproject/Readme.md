@@ -44,3 +44,4 @@ Djangoの動作には、Pythonが必須。DjangoのバージョンとPythonの�
 
 *サーバ起動時にコマンドラインに表示される`You have 13 unapplied...`というmigrationsに関するエラーを消すには**サーバを終了してから`python manage.py migrate`** で消す*
 
+aaaaa
