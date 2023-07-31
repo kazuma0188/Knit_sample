@@ -44,4 +44,35 @@ Djangoの動作には、Pythonが必須。DjangoのバージョンとPythonの�
 
 *サーバ起動時にコマンドラインに表示される`You have 13 unapplied...`というmigrationsに関するエラーを消すには**サーバを終了してから`python manage.py migrate`** で消す*
 
-aaaaa
+---
+追記 2023/07/31
+## Pythonのバージョンを切り替える方法
+`pyenv`というPythonのバージョン管理ツールを使用する
+### pyenvをインストールする
+1. powershellを起動し、以下のコマンドを実行する
+2. `Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &”./install-pyenv-win.ps1"`
+3. インストールが完了したら以下のようにコマンドを実行して環境変数を行う
+    1. `[System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")` → (環境変数に[PYENVを追加する])
+
+    2. `[System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + “\.pyenv\pyenv-win\","User")` → (環境変数に[PYENV_HOMEを追加する])
+
+    3. `[System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")` → (環境変数pathにpyenvを追加する)
+
+<span style="color: red;">※環境変数設定後、PowerShellまたはコマンドプロンプトを再起動する必要がある</span>
+
+### pyenvで任意バージョンのPythonをインストールする
+1. インストール可能なPythonバージョンを調べ、インストールする
+   1. `pyenv install --list`
+   2. `pyenv install 【任意のバージョン】`
+
+### 特定のディレクトリのみで使用するPythonバージョンを設定する方法
+1. `cd <ディレクトリ名>`
+2. `pyenv local 【インストール済みのバージョン】`
+
+## Djangoの3.1.3バージョンを指定してインストール
+`pip install django==3.1.3` 
+
+※表示メッセジーの最終行に「Successfully installed django-3.1.3」と表示されていれば成功
+
+　
+
