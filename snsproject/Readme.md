@@ -76,3 +76,5 @@ Djangoの動作には、Pythonが必須。DjangoのバージョンとPythonの�
 ※表示メッセジーの最終行に「Successfully installed django-3.1.3」と表示されていれば成功
 
 　
+## 追記2023/09/11
+テスト
